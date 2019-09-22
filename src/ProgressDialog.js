@@ -2,9 +2,9 @@ import React, {Component} from "react";
 import {
     View,
     Modal,
-    TouchableHighlight,
     ActivityIndicator,
-    StyleSheet
+    StyleSheet,
+    Text
 } from 'react-native';
 
 class ProgressDialog extends Component {
