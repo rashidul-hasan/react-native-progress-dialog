@@ -2,6 +2,8 @@
 
 Simple progress dialog for React Native
 
+![Demo](demo.gif)
+
 ## Installation
 
 `yarn add react-native-progress-dialog`
