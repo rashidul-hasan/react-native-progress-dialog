@@ -16,7 +16,7 @@ or
 
 First, import 
 ```
-import { ProgressSteps, ProgressStep } from 'react-native-progress-steps';
+import ProgressDialog from 'react-native-progress-dialog';
 ```
 
 Then in your component use it:
