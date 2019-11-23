@@ -17,31 +17,25 @@ class ProgressDialog extends Component {
         const labelStyle = this.props.labelStyle ? this.props.labelStyle : {};
 
         return (
-            <View style={styles.container}>
-                <Modal
-                    animationType="none"
-                    transparent={true}
-                    visible={visible}
-                    onRequestClose={() => {
+            <Modal
+                animationType="none"
+                transparent={true}
+                visible={visible}
+                onRequestClose={() => {
 
-                    }}>
-                    <View style={styles.wrapper}>
-                        <View style={styles.content}>
-                            <ActivityIndicator size="large" color={loaderColor}/>
-                            <Text style={[styles.label, labelStyle]}>{label}</Text>
-                        </View>
+                }}>
+                <View style={styles.wrapper}>
+                    <View style={styles.content}>
+                        <ActivityIndicator size="large" color={loaderColor}/>
+                        <Text style={[styles.label, labelStyle]}>{label}</Text>
                     </View>
-                </Modal>
-            </View>
+                </View>
+            </Modal>
         );
     }
 }
 
 const styles = StyleSheet.create({
-    container: {
-        backgroundColor: "#000",
-        flex: 1
-    },
     label: {
         color: '#00000089',
         fontSize: 18,
